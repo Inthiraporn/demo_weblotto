@@ -1,0 +1,7 @@
+{
+  "name": "weblotto",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
