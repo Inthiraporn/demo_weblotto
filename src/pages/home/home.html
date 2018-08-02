@@ -1,14 +1,84 @@
+<!--
+  Generated template for the Web1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+
+  <ion-navbar color="pink">
+    <ion-title>WEB LOTTO</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-card (click)="goweb1()" style="background-color: rgb(255, 254, 254)">
+    <ion-list>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+
+            <ion-list>
+              <ion-row>
+                <ion-col col-4>
+                  <button style="font-size: 18px;height: 70px;width: 70px; background: grey" full>R.1</button>
+                </ion-col>
+                <ion-col col-8>
+                  <ion-item>
+                    <h2 style="font-size: 22px; color: #000000">
+                      <b>ico Phase</b>
+                    </h2>
+                    <p>ico:1,000,000 THB</p>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+            </ion-list>
+            <ion-col>
+              <ion-item text-center>
+                <p>Round : 2 (1/07/2018-30/07/2018) </p>
+              </ion-item>
+            </ion-col>
+            <ion-col col-2>
+              <button style="font-size: 15px; color: #000000" ion-button clear item-end>Dtail ></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+
+  <!-- 2 -->
+  <ion-card (click)="goweb1()" style="background-color: rgb(255, 254, 254)">
+    <ion-list>
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+
+            <ion-list>
+              <ion-row>
+                <ion-col col-4>
+                  <button style="font-size: 18px;height: 70px;width: 70px; background: grey" full>R.2</button>
+                </ion-col>
+                <ion-col col-8>
+                  <h2 style="font-size: 22px; color: #000000">
+                    <b>Ending 30/06/2018</b>
+                  </h2>
+                  <p>ico:5,000,000 THB</p>
+                </ion-col>
+              </ion-row>
+            </ion-list>
+            <ion-col >
+              <p text-center>Round : 1 (1/07/2018-30/07/2018) </p>
+            </ion-col>
+            <ion-col col-2>
+              <button style="font-size: 15px; color: #000000" ion-button clear item-end>Dtail ></button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
 </ion-content>
