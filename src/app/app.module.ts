@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Web1Page } from '../pages/web1/web1';
 import { WebR1Page } from '../pages/web-r1/web-r1';
+import { MoneyPage } from '../pages/money/money';
+import { Web3Page } from '../pages/web3/web3';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { WebR1Page } from '../pages/web-r1/web-r1';
     HomePage,
     Web1Page,
     WebR1Page,
+    MoneyPage,
+    Web3Page
   ],
   imports: [
     BrowserModule,
@@ -26,6 +30,8 @@ import { WebR1Page } from '../pages/web-r1/web-r1';
     HomePage,
     Web1Page,
     WebR1Page,
+    MoneyPage,
+    Web3Page
   ],
   providers: [
     StatusBar,

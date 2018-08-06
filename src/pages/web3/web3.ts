@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { MoneyPage } from '../money/money';
 
 /**
- * Generated class for the Web2Page page.
+ * Generated class for the Web3Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,21 +11,22 @@ import { MoneyPage } from '../money/money';
 
 @IonicPage()
 @Component({
-  selector: 'page-web1',
-  templateUrl: 'web1.html',
+  selector: 'page-web3',
+  templateUrl: 'web3.html',
 })
-export class Web1Page {
+export class Web3Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alerCtrl: AlertController) {
+  constructor(public alerCtrl: AlertController,public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  money(){
-    this.navCtrl.push(MoneyPage)
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad Web3Page');
   }
+
   doAlert() {
     let alert = this.alerCtrl.create({
-      title: 'mana',
-      message: 'Accept agreement',
+      title: 'scan mana!',
+      message: 'Accept agreement, go to app lotto',
       buttons: [
         {
           text:'OK',
@@ -37,9 +37,7 @@ export class Web1Page {
           }
         }
       ],
-      
     });
     alert.present()
   }
-
 }
